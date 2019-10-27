@@ -1,0 +1,264 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color:#bdb29c;
+    
+    margin-right: 500px;
+    margin-left: 500px;
+    
+    height:550px;
+    margin-bottom: 0px;
+    width:300px;
+    padding-bottom: 0px;
+    margin-top: -50;
+
+
+  
+}
+
+
+.row{
+  border-top-width: 0px;
+  border-top-style: solid;
+  margin-bottom: 0px;
+  border-bottom-width: 0px;
+  border-bottom-style: solid;
+  padding-top: -12px;
+  border-radius: 8px;
+  border-bottom-left-radius:0px;
+  border-bottom-right-radius:0px;
+  height:232px;
+  width:300px;  
+}
+.mySlides {
+   display: none; 
+}
+
+.card{
+    width: 300px;
+    display: inline-block;
+    margin: auto;
+    border-radius: 19px;
+    position: relative;
+    text-align: center;
+    box-shadow: -1px 15px 30px -12px #e2d3d3;
+    z-index: 9999;
+
+}
+.card .card-bod span{
+    display: block;
+    color: var(--level-text);
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 8px;
+}
+
+.card .card-bod {
+    
+    border-top-width: -92px;
+    margin-top: 0px;
+    border-bottom-width: -53px;
+    width: 300px;
+    background-color: white;
+    padding-left: 0px;
+    border-left-width: 1px;
+}
+ hr{
+   letter-spacing: 2px;
+   background-color:#ffff;
+   border:0px;
+}
+p{
+    padding:13px;
+    color:#8e8d8a;
+    font-size: 15px;
+    text-justify: distribute-all-lines;
+    background-color: white;
+    background-color:#fff;
+    height: 81px;
+    padding-top: 10px;   
+}
+
+.card .footer h2{
+    padding:5px 0px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: 15px;
+    
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    margin:unset;
+    border-color: #ffff;
+    border-right-width: 2px;
+    padding-right: 1px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+    width: 300px;
+    margin-right: 100px;
+    height: 300px;
+    border-top-width: 0px;
+    border-top-style: solid;
+    margin-bottom: 139px;
+    border-bottom-style: solid;
+    margin-top: 150px;
+    border-bottom-width: 67px;
+    padding-left: 0px;
+}
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    border-radius: 3px 0 0 3px;
+    right: 8px;
+    left: 315.406px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    margin-top: 0px;
+}
+.prev{
+    right: 0px;
+    left: -25px;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-top: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 0px;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+  height: 78px;
+  width: 57px;
+  padding-bottom: 0px;
+  padding-top: 112px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+:root{
+    --level-text:#EC9B3B;
+    --one-card: #EC9B3B;
+    --two-card:#4FACFF;
+    --three-card: #78ad29;
+  /* we use var(and here name of color)*/
+}
+.card-one{
+    width: 390px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 18px 28px -7px rgba(0,0,0,0.43);
+    text-align: center;
+    margin: -31px 29%;
+}
+.footer{
+    display: flex;
+    color: #fff;
+    border-radius: 0px 0px 10px 10px ;
+    font-size:small;
+}
+ .strength{
+    flex: 1;
+    background-color:var(--level-text); 
+    border-right: 1px solid #000;
+    border-radius: 0px 0px 0px 10px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+ .speed{
+    flex: 1;
+    background-color:var(--level-text); 
+    border-right: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+ .cost{
+    flex: 1;
+    background-color:var(--level-text); 
+    border-right:0px;
+    border-radius: 0px 0px 10px 0px ;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
